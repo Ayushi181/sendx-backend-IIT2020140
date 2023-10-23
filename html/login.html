@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="/javascript/login.js" defer></script>
+    <link rel="stylesheet" href="/css/login.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <img class="logo" src="https://www.sendx.io/hubfs/SendPost_August2021/images/SendX-By-Logo.svg" alt="Logo">
+            <h2>Login As</h2>
+            <input type="radio" id="user" name="user-type" value="user" checked>
+            <label for="user">User</label>
+            <input type="radio" id="admin" name="user-type" value="admin">
+            <label for="admin">Admin</label>
+            
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <button class="login-btn" onclick="login()">Login</button>
+        </div>
+    </div>
+
+</body>
+</html>

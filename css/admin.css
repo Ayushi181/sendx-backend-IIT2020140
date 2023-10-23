@@ -1,0 +1,91 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #e4ebf5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h3 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    color: #007BFF;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+.container {
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    transition: border .2s;
+    margin: 10px 0;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007BFF;
+}
+
+label {
+    font-size: 14px;
+    display: block;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.btn-container {
+    text-align: center;
+    /* Center the buttons */
+    margin-top: 20px;
+}
+
+button {
+    display: inline-block;
+    /* Change this */
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+    /* Adjust this: remove margin auto and set horizontal margin */
+    transition: background-color .2s;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+pre {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    height: 200px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+#output {
+    margin-top: 20px;
+}
