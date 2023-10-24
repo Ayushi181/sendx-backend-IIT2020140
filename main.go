@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
-
 	"sendx-project/handlers"
 )
 
@@ -20,11 +18,8 @@ func main() {
 	http.HandleFunc("/config/maxCrawlsPerHour", handlers.SetMaxCrawlsPerHour)
 	http.HandleFunc("/config", handlers.GetConfig)
 	http.HandleFunc("/get-config", handlers.GetConfigJSON)
-
 	http.Handle("/html/", http.StripPrefix("/html/", http.FileServer(http.Dir("./html"))))
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("./css"))))
 	http.Handle("/javascript/", http.StripPrefix("/javascript/", http.FileServer(http.Dir("./javascript"))))
-
-	fmt.Println("Server Running on ", PORT)
 	http.ListenAndServe(fmt.Sprintf(":%d", PORT), nil)
 }
